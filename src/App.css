@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.aiw-container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: linear-gradient(180deg, #f8fbff 0%, #eaf1fa 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 18px;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.aiw-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.aiw-desc {
+  color: #5a6a85;
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.aiw-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 1.5em;
+}
+
+.aiw-tab {
+  background: #f3f6fa;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #5a6a85;
+  transition: background 0.2s, color 0.2s;
+}
+
+.aiw-tab.active {
+  background: #fff;
+  color: #2563eb;
+  font-weight: 600;
+  box-shadow: 0 -2px 8px rgba(37,99,235,0.07);
+}
+
+.aiw-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.07);
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 1.2em;
+}
+
+.aiw-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+.aiw-label {
+  display: block;
+  font-size: 0.98rem;
+  margin-bottom: 0.4em;
+  color: #5a6a85;
+}
+
+.aiw-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.aiw-input:focus {
+  border: 1.5px solid #2563eb;
+}
+
+.aiw-generate-btn {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.aiw-generate-btn:hover {
+  background: #1746a2;
+}
+
+.aiw-output-box {
+  background: #f3f6fa;
+  border-radius: 7px;
+  padding: 14px 12px;
+  min-height: 60px;
+  color: #222e3a;
+  font-size: 1rem;
+  margin-top: 0.5em;
+  white-space: pre-line;
+}
